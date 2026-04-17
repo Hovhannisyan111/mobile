@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Մուտքագրեք անկյունը (ռադիան)"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radioSin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sinx"/>
+
+        <RadioButton
+            android:id="@+id/radioCos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cosx"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Հաշվել"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Արդյունք"
+        android:textSize="20sp"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
